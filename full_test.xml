@@ -1,0 +1,507 @@
+<?xml version="1.0" ?>
+<Cluster masterAddress="127.0.0.1">
+  <Scene>
+    <Offset x="-1.0" y="2.0" z="-3.0" />
+    <Orientation heading="7.5" pitch="-35.0" roll="5.0" />
+    <Scale value="1.5" />
+  </Scene>
+  <Node address="127.0.0.1" port="20401">
+    <Window name="single">
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+     <Window name="single-stereo-amber-blue">
+      <Stereo type="anaglyph_amber_blue" />
+      <Pos x="640" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+     <Window name="single-stereo-sbs">
+      <Stereo type="side_by_side" />
+      <Pos x="1280" y="35" />
+      <Size x="1280" y="360" />
+      <Res x="3840" y="1080" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-multiple-viewpoints">
+      <Pos x="2560" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="0.45" y="0.45" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+          <Orientation heading="-10.0" pitch="0.0" roll="0.0" />
+        </PlanarProjection>
+      </Viewport>
+      <Viewport>
+        <Pos x="0.5" y="0.0" />
+        <Size x="0.45" y="0.45" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+          <Orientation heading="10.0" pitch="0.0" roll="0.0" />
+        </PlanarProjection>
+      </Viewport>
+      <Viewport>
+        <Pos x="0.0" y="0.5" />
+        <Size x="0.45" y="0.45" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+          <Orientation heading="0.0" pitch="-10.0" roll="0.0" />
+        </PlanarProjection>
+      </Viewport>
+      <Viewport>
+        <Pos x="0.5" y="0.5" />
+        <Size x="0.45" y="0.45" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+          <Orientation heading="0.0" pitch="10.0" roll="0.0" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-projectionplane">
+      <Pos x="3200" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <Projectionplane>
+          <Pos x="-1.778" y="0.0" z="-4.0" />
+          <Pos x="-1.778" y="1.0" z="-4.0" />
+          <Pos x="0.0" y="1.0" z="-4.0" />
+        </Projectionplane>
+      </Viewport>
+    </Window>
+    <Window name="single-square-orientation">
+      <Pos x="0" y="450" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="40" left="40.0" right="40.0" up="40" />
+          <Orientation heading="-90.0" pitch="25.0" roll="45.0" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-square-offset">
+      <Pos x="360" y="450" />
+      <Size x="360" y="360" />
+      <Res x="2160" y="2160" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="40" left="40.0" right="40.0" up="40" />
+          <Offset x="-10" y="2.5" z="5" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-square-overlay">
+      <Pos x="720" y="450" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport overlay="test-overlay.png">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="40" left="40.0" right="40.0" up="40" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-square-mask">
+      <Pos x="1080" y="450" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport mask="test-mask.png">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="40" left="40.0" right="40.0" up="40" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-square-blendmask">
+      <Pos x="1440" y="450" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport BlendMask="test-blend.png">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="40" left="40.0" right="40.0" up="40" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-square-blacklevelmask">
+      <Pos x="1800" y="450" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport BlackLevelMask="test-blend.png">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="40" left="40.0" right="40.0" up="40" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-square-eye-left">
+      <Pos x="2160" y="450" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport eye="left">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="40" left="40.0" right="40.0" up="40" />
+          <Orientation heading="-7.5" pitch="35.0" roll="-5.0" />
+          <Offset x="1.0" y="-2.0" z="3.0" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-square-eye-center">
+      <Pos x="2520" y="450" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport eye="center">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="40" left="40.0" right="40.0" up="40" />
+          <Orientation heading="-7.5" pitch="35.0" roll="-5.0" />
+          <Offset x="1.0" y="-2.0" z="3.0" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-square-eye-right">
+      <Pos x="2880" y="450" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport eye="right">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="40" left="40.0" right="40.0" up="40" />
+          <Orientation heading="-7.5" pitch="35.0" roll="-5.0" />
+          <Offset x="1.0" y="-2.0" z="3.0" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-square-minimal">
+      <Pos x="3240" y="450" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <PlanarProjection>
+          <FOV down="15" left="15.0" right="15.0" up="15" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-square-asymmetric">
+      <Pos x="0" y="865" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <PlanarProjection>
+          <FOV down="35" left="15.0" right="55.0" up="15" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye">
+      <Pos x="360" y="865" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0">
+          <Background r="0.1" g="0.1" b="0.1" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye-medium-360">
+      <Pos x="720" y="865" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="360" quality="medium" tilt="27.0">
+          <Background r="0.1" g="0.1" b="0.1" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye-low">
+      <Pos x="1080" y="865" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="low" tilt="27.0">
+          <Background r="0.1" g="0.1" b="0.1" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye-4k">
+      <Pos x="1440" y="865" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="4k" tilt="27.0">
+          <Background r="0.1" g="0.1" b="0.1" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye-8k">
+      <Pos x="1800" y="865" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="8k" tilt="27.0">
+          <Background r="0.1" g="0.1" b="0.1" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+<!--     <Window name="fisheye-16k">
+      <Pos x="2160" y="865" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="16k" tilt="27.0">
+          <Background r="0.1" g="0.1" b="0.1" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window> -->
+    <Window name="fisheye-notilt">
+      <Pos x="2520" y="865" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="0.0">
+          <Background r="0.1" g="0.1" b="0.1" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye-background">
+      <Pos x="2880" y="865" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0">
+          <Background r="1.0" g="0.5" b="0.5" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye-background-alpha">
+      <Pos x="3240" y="865" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0">
+          <Background r="1.0" g="0.5" b="0.5" a="0.1" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye-method-four-cube">
+      <Pos x="0" y="1280" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0" />
+      </Viewport>
+    </Window>
+    <Window name="fisheye-method-five-cube">
+      <Pos x="360" y="1280" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0" method="five_face_cube" />
+      </Viewport>
+    </Window>
+    <Window name="fisheye-interpolation-linear">
+      <Pos x="720" y="1280" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0" />
+      </Viewport>
+    </Window>
+    <Window name="fisheye-interpolation-cubic">
+      <Pos x="1080" y="1280" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0" interpolation="cubic" />
+      </Viewport>
+    </Window>
+    <Window name="fisheye-diameter">
+      <Pos x="1440" y="1280" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0" diameter="50.0" />
+      </Viewport>
+    </Window>
+    <Window name="fisheye-cropped">
+      <Pos x="1800" y="1280" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0">
+            <Crop left="0.1" right="0.75" bottom="0.15" top="0.55" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye-offset">
+      <Pos x="2160" y="1280" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0">
+            <Offset x="0.1" y="-0.2" z="0.3" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye-cropped-offset-background">
+      <Pos x="2520" y="1280" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0">
+            <Crop left="0.1" right="0.75" bottom="0.15" top="0.55" />
+            <Offset x="0.1" y="-0.2" z="0.3" />
+            <Background r="1.0" g="0.5" b="0.5" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye-stereo">
+      <Stereo type="anaglyph_red_cyan" />
+      <Pos x="2880" y="1280" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0">
+          <Background r="0.1" g="0.1" b="0.1" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="fisheye-stereo-diameter">
+      <Stereo type="anaglyph_red_cyan" />
+      <Pos x="3240" y="1280" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" diameter="0.5" tilt="27.0">
+          <Background r="0.1" g="0.1" b="0.1" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="spherical-one-mesh">
+      <Pos x="0" y="1695" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport name="warped fisheye" mesh="standard_16x9.data">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <FisheyeProjection fov="180" quality="2k" tilt="0.0">
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="spherical-one-mesh-4k">
+      <Pos x="640" y="1695" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport name="warped fisheye" mesh="standard_16x9.data">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <FisheyeProjection fov="180" quality="4k" tilt="0.0">
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+    <Window name="spherical-four-mesh">
+      <Pos x="1280" y="1695" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport name="warped fisheye" mesh="standard_16x9.data">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <SphericalMirrorProjection quality="2k" tilt="0.0">
+          <Geometry bottom="bottom_warp2.obj" left="left_warp2.obj" right="right_warp2.obj" top="top_warp2.obj" />
+          <Background r="1.0" g="0.1" b="0.1" a="1.0" />
+        </SphericalMirrorProjection>
+      </Viewport>
+    </Window>
+    <Window name="spherical-four-mesh-4k">
+      <Pos x="1920" y="1695" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport name="warped fisheye" mesh="standard_16x9.data">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <SphericalMirrorProjection quality="4k" tilt="0.0">
+          <Geometry bottom="bottom_warp2.obj" left="left_warp2.obj" right="right_warp2.obj" top="top_warp2.obj" />
+          <Background r="1.0" g="0.1" b="0.1" a="1.0" />
+        </SphericalMirrorProjection>
+      </Viewport>
+    </Window>
+  </Node>
+  <Node address="127.0.0.2" port="20401">
+    <Window name="second-node">
+      <Pos x="2560" y="1695" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window mpcdi="correction_mesh.mpcdi" />
+    <Window mpcdi="zero_distortion_mesh.mpcdi" />
+  </Node>
+  <User eyeSeparation="0.06">
+    <Pos x="0.0" y="0.0" z="0.0" />
+  </User>
+</Cluster>
+
+<!--
+Horizonal:
+0
+360
+720
+1080
+1440
+1800
+2160
+2520
+2880
+3240
+
+Vertical:
+450
+865
+1280
+1695
+2110
+-->
