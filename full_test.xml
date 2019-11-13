@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<Cluster masterAddress="127.0.0.1">
+<Cluster masterAddress="127.0.0.1" checkOpenGL="true">
   <Scene>
     <Offset x="-1.0" y="2.0" z="-3.0" />
     <Orientation heading="7.5" pitch="-35.0" roll="5.0" />
