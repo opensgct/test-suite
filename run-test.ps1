@@ -33,7 +33,7 @@ Get-ChildItem -Path "comparison" -File -Name | ForEach-Object {
         $ref = $_ -replace ".png", "-ref.png"
         $ref_hash = Get-FileHash("comparison/$ref")
         if (!($f_hash.hash -eq $ref_hash.hash)) {
-            Write-Output "\tHash changed: $f"
+            Write-Output "    Hash changed: $f"
         }
     }
 }
