@@ -508,6 +508,227 @@
           </PlanarProjection>
       </Viewport>
     </Window>
+    <Window name="single-stereo-none">
+      <Stereo type="none" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-no-stereo">
+      <Stereo type="no_stereo" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+<!--     <Window name="single-stereo-active">
+      <Stereo type="active" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-quadbuffer">
+      <Stereo type="quadbuffer" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window> -->
+    <Window name="single-stereo-checkerboard">
+      <Stereo type="checkerboard" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-checkerboard_inverted">
+      <Stereo type="checkerboard_inverted" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-anaglyph_red_cyan">
+      <Stereo type="anaglyph_red_cyan" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-anaglyph_amber_blue">
+      <Stereo type="anaglyph_amber_blue" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-anaglyph_wimmer">
+      <Stereo type="anaglyph_wimmer" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-vertical_interlaced">
+      <Stereo type="vertical_interlaced" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-vertical_interlaced_inverted">
+      <Stereo type="vertical_interlaced_inverted" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-test">
+      <Stereo type="test" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-dummy">
+      <Stereo type="dummy" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-side_by_side">
+      <Stereo type="side_by_side" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-side_by_side_inverted">
+      <Stereo type="side_by_side_inverted" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-top_bottom">
+      <Stereo type="top_bottom" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
+    <Window name="single-stereo-top_bottom_inverted">
+      <Stereo type="top_bottom_inverted" />
+      <Pos x="0" y="35" />
+      <Size x="640" y="360" />
+      <Res x="2560" y="1440" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <PlanarProjection>
+          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
+        </PlanarProjection>
+      </Viewport>
+    </Window>
   </Node>
   <User eyeSeparation="0.06">
     <Pos x="0.0" y="0.0" z="0.0" />
