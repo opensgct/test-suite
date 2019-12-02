@@ -45,6 +45,9 @@ Get-ChildItem -Path "comparison" -File -Name | ForEach-Object {
     $ref_hash = Get-FileHash "comparison/$ref"
     $f_hash = Get-FileHash("comparison/$f")
     if ($f_hash.hash -eq $ref_hash.hash) {
+      # Remove the files that are the same
+      Remove-Item -path comparison/$f
+      Remove-Item -path comparison/$ref
       $success = $success + 1
     }
     else {
