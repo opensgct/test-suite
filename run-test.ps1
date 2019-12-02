@@ -8,23 +8,24 @@ if (!(Test-Path -Path $application -PathType Leaf)) {
 
 # Create new comparison directory
 if (Test-Path -Path "comparison") {
+  Write-Output "Removing previous comparison results"
   Remove-Item -Path "comparison" -Recurse
 }
 New-Item -Path . -Name "comparison" -ItemType "directory" | Out-Null
 
 # Copy over the reference images
-Write-Output "Copying reference images..."
+Write-Output "Copying reference images"
 Copy-Item -Path "reference/*" -Destination "comparison" -Recurse
 # Rename reference images by adding a "-ref" to the end
 Get-ChildItem -Path "comparison" -File | Rename-Item -NewName {$_.name -replace ".png", "-ref.png" }
 # Create the test images
-Write-Output "Creating test images..."
+Write-Output "Creating test images"
 Start-Process -FilePath $application -ArgumentList "-config full_test.xml -local 1 -client"
 Start-Process -FilePath $application -ArgumentList "-config full_test.xml" -Wait
 # Copy current files into comparison folder
 Move-Item -Path "SGCT*.png" -Destination "comparison"
 
-Write-Output "Comparing..."
+Write-Output "Comparing"
 Write-Output "============"
 $total = 0
 $success = 0
