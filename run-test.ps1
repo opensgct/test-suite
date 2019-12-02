@@ -26,16 +26,38 @@ Move-Item -Path "SGCT*.png" -Destination "comparison"
 
 Write-Output "Comparing..."
 Write-Output "============"
+$total = 0
+$success = 0
 Get-ChildItem -Path "comparison" -File -Name | ForEach-Object {
-    if (!($_ -match "-ref")) {
-        $f = $_
-        $f_hash = Get-FileHash "comparison/$f"
-        $ref = $_ -replace ".png", "-ref.png"
-        $ref_hash = Get-FileHash("comparison/$ref")
-        if (!($f_hash.hash -eq $ref_hash.hash)) {
-            Write-Output "    Hash changed: $f"
-        }
+  if ($_ -match "-ref") {
+    $total = $total + 1
+
+    $ref = $_
+    # Remove the -ref suffix to find get to the image that we want to test
+    $f = $_ -replace "-ref.png", ".png"
+
+    # Check if the newly created file exists
+    if (!(Test-Path "comparison/$f")) {
+      Write-Output "    Could not find file: $f"
+      return;
     }
+    $ref_hash = Get-FileHash "comparison/$ref"
+    $f_hash = Get-FileHash("comparison/$f")
+    if ($f_hash.hash -eq $ref_hash.hash) {
+      $success = $success + 1
+    }
+    else {
+      Write-Output "    Hash changed: $f"
+    }
+  }
+  else {
+    # For all of the created images, make sure that a reference image exists as a safety net
+    $f = $_
+    $ref = $_ -replace ".png", "-ref.png"
+    if (!(Test-Path "comparison/$ref")) {
+      Write-Output "    No corresponding reference file found: $f"
+    }
+  }
 }
 Write-Output "============"
-Write-Output "If there were no messages between the lines, the compared images are the same"
+Write-Output "Results: $success / $total tests succeeded"
