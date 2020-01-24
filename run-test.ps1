@@ -20,9 +20,9 @@ Copy-Item -Path "reference/*" -Destination "comparison" -Recurse
 Get-ChildItem -Path "comparison" -File | Rename-Item -NewName {$_.name -replace ".png", "-ref.png" }
 # Create the test images
 Write-Output "Creating test images"
-Start-Process -FilePath $application -ArgumentList "-config full_test.xml -local 2 -client"
-Start-Process -FilePath $application -ArgumentList "-config full_test.xml -local 1 -client"
-Start-Process -FilePath $application -ArgumentList "-config full_test.xml" -Wait
+Start-Process -FilePath $application -ArgumentList "-config full_test.xml -local 2 -client -runTests"
+Start-Process -FilePath $application -ArgumentList "-config full_test.xml -local 1 -client -runTests"
+Start-Process -FilePath $application -ArgumentList "-config full_test.xml -runTests" -Wait
 # Copy current files into comparison folder
 Move-Item -Path "SGCT*.png" -Destination "comparison"
 
