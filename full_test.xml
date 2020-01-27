@@ -1098,6 +1098,69 @@
           </PlanarProjection>
       </Viewport>
     </Window>
+    <Window fullScreen="false" name="cylindrical-projection">
+      <Size x="1000" y="500" />
+      <Res x="3000" y="1500" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+          <CylindricalProjection />
+      </Viewport>
+    </Window>
+    <Window fullScreen="false" name="cylindrical-projection-4k">
+      <Size x="1000" y="500" />
+      <Res x="3000" y="1500" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+          <CylindricalProjection quality="4k" />
+      </Viewport>
+    </Window>
+    <Window fullScreen="false" name="cylindrical-projection-4k">
+      <Size x="1000" y="500" />
+      <Res x="3000" y="1500" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+          <CylindricalProjection quality="4k" />
+      </Viewport>
+    </Window>
+    <Window fullScreen="false" name="cylindrical-projection-2k-rotated">
+      <Size x="1000" y="500" />
+      <Res x="3000" y="1500" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+          <CylindricalProjection quality="2k" rotation="90" />
+      </Viewport>
+    </Window>
+    <Window fullScreen="false" name="cylindrical-projection-2k-height">
+      <Size x="1000" y="500" />
+      <Res x="3000" y="1500" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+          <CylindricalProjection quality="2k" height="3" />
+      </Viewport>
+    </Window>
+    <Window fullScreen="false" name="equirectangular">
+      <Size x="1000" y="500" />
+      <Res x="3000" y="1500" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+          <EquirectangularProjection />
+      </Viewport>
+    </Window>
+    <Window fullScreen="false" name="equirectangular-4k">
+      <Size x="1000" y="500" />
+      <Res x="3000" y="1500" />
+      <Viewport>
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+          <EquirectangularProjection quality="4k" />
+      </Viewport>
+    </Window>
   </Node>
   <User eyeSeparation="0.06">
     <Pos x="0.0" y="0.0" z="0.0" />
