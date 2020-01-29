@@ -415,6 +415,16 @@
         </FisheyeProjection>
       </Viewport>
     </Window>
+    <Window name="fisheye-offset-cubic">
+      <Pos x="2160" y="1280" />
+      <Size x="360" y="360" />
+      <Res x="2048" y="2048" />
+      <Viewport>
+        <FisheyeProjection fov="180" quality="medium" tilt="27.0" interpolation="cubic">
+            <Offset x="0.1" y="-0.2" z="0.3" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
     <Window name="spherical-one-mesh">
       <Pos x="0" y="1695" />
       <Size x="640" y="360" />
