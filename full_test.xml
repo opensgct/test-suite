@@ -7,7 +7,6 @@
   </Scene>
   <Node address="127.0.0.1" port="20401" swapLock="true">
     <Window name="single">
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -20,7 +19,6 @@
     </Window>
      <Window name="single-stereo-amber-blue">
       <Stereo type="anaglyph_amber_blue" />
-      <Pos x="640" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -33,7 +31,6 @@
     </Window>
      <Window name="single-stereo-sbs">
       <Stereo type="side_by_side" />
-      <Pos x="1280" y="35" />
       <Size x="1280" y="360" />
       <Res x="3840" y="1080" />
       <Viewport>
@@ -45,7 +42,6 @@
       </Viewport>
     </Window>
     <Window name="single-multiple-viewpoints">
-      <Pos x="2560" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -82,7 +78,6 @@
       </Viewport>
     </Window>
     <Window name="single-projectionplane">
-      <Pos x="3200" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -96,7 +91,6 @@
       </Viewport>
     </Window>
     <Window name="single-square-orientation">
-      <Pos x="0" y="450" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -109,7 +103,6 @@
       </Viewport>
     </Window>
     <Window name="single-square-offset">
-      <Pos x="360" y="450" />
       <Size x="360" y="360" />
       <Res x="2160" y="2160" />
       <Viewport>
@@ -122,7 +115,6 @@
       </Viewport>
     </Window>
     <Window name="single-square-overlay">
-      <Pos x="720" y="450" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport overlay="test-overlay.png">
@@ -134,7 +126,6 @@
       </Viewport>
     </Window>
     <Window name="single-square-mask">
-      <Pos x="1080" y="450" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport mask="test-mask.png">
@@ -146,7 +137,6 @@
       </Viewport>
     </Window>
     <Window name="single-square-blendmask">
-      <Pos x="1440" y="450" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport BlendMask="test-blend.png">
@@ -158,7 +148,6 @@
       </Viewport>
     </Window>
     <Window name="single-square-blacklevelmask">
-      <Pos x="1800" y="450" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport BlackLevelMask="test-blend.png">
@@ -170,7 +159,6 @@
       </Viewport>
     </Window>
     <Window name="single-square-eye-left">
-      <Pos x="2160" y="450" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport eye="left">
@@ -184,7 +172,6 @@
       </Viewport>
     </Window>
     <Window name="single-square-eye-center">
-      <Pos x="2520" y="450" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport eye="center">
@@ -198,7 +185,6 @@
       </Viewport>
     </Window>
     <Window name="single-square-eye-right">
-      <Pos x="2880" y="450" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport eye="right">
@@ -212,7 +198,6 @@
       </Viewport>
     </Window>
     <Window name="single-square-minimal">
-      <Pos x="3240" y="450" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -222,7 +207,6 @@
       </Viewport>
     </Window>
     <Window name="single-square-asymmetric">
-      <Pos x="0" y="865" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -232,7 +216,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye">
-      <Pos x="360" y="865" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -242,7 +225,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-medium-360">
-      <Pos x="720" y="865" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -252,7 +234,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-low">
-      <Pos x="1080" y="865" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -262,7 +243,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-4k">
-      <Pos x="1440" y="865" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -272,7 +252,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-8k">
-      <Pos x="1800" y="865" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -282,7 +261,6 @@
       </Viewport>
     </Window>
 <!--     <Window name="fisheye-16k">
-      <Pos x="2160" y="865" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -292,7 +270,6 @@
       </Viewport>
     </Window> -->
     <Window name="fisheye-notilt">
-      <Pos x="2520" y="865" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -302,7 +279,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-background">
-      <Pos x="2880" y="865" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -312,7 +288,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-background-alpha">
-      <Pos x="3240" y="865" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -322,7 +297,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-method-four-cube">
-      <Pos x="0" y="1280" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -330,7 +304,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-method-five-cube">
-      <Pos x="360" y="1280" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -338,7 +311,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-interpolation-linear">
-      <Pos x="720" y="1280" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -346,7 +318,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-interpolation-cubic">
-      <Pos x="1080" y="1280" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -354,7 +325,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-diameter">
-      <Pos x="1440" y="1280" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -362,7 +332,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-cropped">
-      <Pos x="1800" y="1280" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -372,7 +341,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-offset">
-      <Pos x="2160" y="1280" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -382,7 +350,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-cropped-offset-background">
-      <Pos x="2520" y="1280" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -395,7 +362,6 @@
     </Window>
     <Window name="fisheye-stereo">
       <Stereo type="anaglyph_red_cyan" />
-      <Pos x="2880" y="1280" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -406,7 +372,6 @@
     </Window>
     <Window name="fisheye-stereo-diameter">
       <Stereo type="anaglyph_red_cyan" />
-      <Pos x="3240" y="1280" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -416,7 +381,6 @@
       </Viewport>
     </Window>
     <Window name="fisheye-offset-cubic">
-      <Pos x="2160" y="1280" />
       <Size x="360" y="360" />
       <Res x="2048" y="2048" />
       <Viewport>
@@ -426,7 +390,6 @@
       </Viewport>
     </Window>
     <Window name="spherical-one-mesh">
-      <Pos x="0" y="1695" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport name="warped fisheye" mesh="standard_16x9.data">
@@ -437,7 +400,6 @@
       </Viewport>
     </Window>
     <Window name="spherical-one-mesh-4k">
-      <Pos x="640" y="1695" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport name="warped fisheye" mesh="standard_16x9.data">
@@ -448,7 +410,6 @@
       </Viewport>
     </Window>
     <Window name="spherical-four-mesh">
-      <Pos x="1280" y="1695" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport name="warped fisheye" mesh="standard_16x9.data">
@@ -461,7 +422,6 @@
       </Viewport>
     </Window>
     <Window name="spherical-four-mesh-4k">
-      <Pos x="1920" y="1695" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport name="warped fisheye" mesh="standard_16x9.data">
@@ -491,20 +451,7 @@
 
 
   <Node address="127.0.0.2" port="20402" swapLock="true">
-    <Window name="single">
-      <Pos x="0" y="35" />
-      <Size x="640" y="360" />
-      <Res x="2560" y="1440" />
-      <Viewport>
-        <Pos x="0.0" y="0.0" />
-        <Size x="1.0" y="1.0" />
-        <PlanarProjection>
-          <FOV down="25.267007923362" left="40.0" right="40.0" up="25.267007923362" />
-        </PlanarProjection>
-      </Viewport>
-    </Window>
     <Window name="second-node">
-      <Pos x="2560" y="1695" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -518,7 +465,6 @@
     <Window name="correction_mesh" mpcdi="correction_mesh.mpcdi" />
     <Window name="zero_distortion_mesh" mpcdi="zero_distortion_mesh.mpcdi" />
     <Window name="multiple-users">
-      <Pos x="3200" y="1695" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -548,7 +494,6 @@
     </Window>
     <Window name="single-stereo-none">
       <Stereo type="none" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -561,7 +506,6 @@
     </Window>
     <Window name="single-stereo-no-stereo">
       <Stereo type="no_stereo" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -574,7 +518,6 @@
     </Window>
 <!--     <Window name="single-stereo-active">
       <Stereo type="active" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -587,7 +530,6 @@
     </Window>
     <Window name="single-stereo-quadbuffer">
       <Stereo type="quadbuffer" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -600,7 +542,6 @@
     </Window> -->
     <Window name="single-stereo-checkerboard">
       <Stereo type="checkerboard" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -613,7 +554,6 @@
     </Window>
     <Window name="single-stereo-checkerboard_inverted">
       <Stereo type="checkerboard_inverted" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -626,7 +566,6 @@
     </Window>
     <Window name="single-stereo-anaglyph_red_cyan">
       <Stereo type="anaglyph_red_cyan" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -639,7 +578,6 @@
     </Window>
     <Window name="single-stereo-anaglyph_amber_blue">
       <Stereo type="anaglyph_amber_blue" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -652,7 +590,6 @@
     </Window>
     <Window name="single-stereo-anaglyph_wimmer">
       <Stereo type="anaglyph_wimmer" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -665,7 +602,6 @@
     </Window>
     <Window name="single-stereo-vertical_interlaced">
       <Stereo type="vertical_interlaced" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -678,7 +614,6 @@
     </Window>
     <Window name="single-stereo-vertical_interlaced_inverted">
       <Stereo type="vertical_interlaced_inverted" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -691,7 +626,6 @@
     </Window>
     <Window name="single-stereo-test">
       <Stereo type="test" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -704,7 +638,6 @@
     </Window>
     <Window name="single-stereo-dummy">
       <Stereo type="dummy" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -717,7 +650,6 @@
     </Window>
     <Window name="single-stereo-side_by_side">
       <Stereo type="side_by_side" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -730,7 +662,6 @@
     </Window>
     <Window name="single-stereo-side_by_side_inverted">
       <Stereo type="side_by_side_inverted" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -743,7 +674,6 @@
     </Window>
     <Window name="single-stereo-top_bottom">
       <Stereo type="top_bottom" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
@@ -756,7 +686,6 @@
     </Window>
     <Window name="single-stereo-top_bottom_inverted">
       <Stereo type="top_bottom_inverted" />
-      <Pos x="0" y="35" />
       <Size x="640" y="360" />
       <Res x="2560" y="1440" />
       <Viewport>
